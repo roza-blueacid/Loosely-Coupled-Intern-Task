@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Intern Task</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body >
+
+    <div id="outerblock">
+        <div id="title"><h2>My Intern Task</h2></div>
+        
+        <div id="outer">
+            <div>
+                <input id="leftinput" type="text" placeholder="Search Order">
+                <button id="rightbutton" type="submit" >Search</button>
+                
+                <select  id="dropdown"  type="date" placeholder="last Updated date" >
+                    <option value="none" selected disabled hidden>Last Updated Date</option>
+                    <option value="1 day">1 Day</option>
+                    <option value="7 days">7 Days</option>
+                    <option value="30 day">30 Days</option>
+                    <option value="Other">Other</option>
+                  </select> 
+
+                  <select  id="dropdown" placeholder="last 7 days" >
+                    <option value="none" selected disabled hidden>Last 7 Days</option>
+                    <option value="1 day">1 Day</option>
+                    <option value="7 days">7 Days</option>
+                    <option value="30 day">30 Days</option>
+                    <option value="Other">Other</option>
+                  </select>               
+                  
+                <button id="rightbutton" type="submit" >Show Order</button>
+                <input id="monthInput" type="month" placeholder="mm/dd/yyyy">
+                <input id="monthInput" type="month" placeholder="mm/dd/yyyy">
+
+                <button id="rightbutton" type="submit" >Create New Order</button>
+            
+        </div>
+
+        <div >
+            <button id="buttons" type="submit" onclick="highlight1()">Balance</button>
+            <button id="buttons" type="submit" onclick="highlight2()" >Orders</button>
+            <button id="buttons" type="submit" onclick="highlight3()">Promotion</button>
+            <button id="buttons"type="submit" onclick="highlight4()">Delivery</button>
+        </div>
+
+        <div id = "box">
+            <div id="b1" >
+                <h5>MYR</h5> 
+                <h3><span id="balance"></span></h3>
+                <h6>Available Balance</h6>
+            </div>  
+        </div>
+    
+        <div id = "box">
+            <div id="b2">
+            <h5>MYR</h5>
+            <h3><span id="order"></span></h3>
+            <h6>Order Under Processing</h6>
+            </div>
+        </div>
+        <div id = "box">
+            <div id="b3">
+            <h5>MYR</h5>
+            <h3><span id="incentive"></span></h3>
+            <h6>Promotional Incentive</h6>
+            </div>
+        </div>
+        <div id = "box">
+            <div id="b4">
+            <h5>MYR</h5>
+            <h3><span id="delivery"></span></h3>
+            <h6>Delivery Balance</h6>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+
+</html>
